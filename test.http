@@ -1,0 +1,29 @@
+### GET request
+GET http://localhost:8080/todos
+Accept: application/json
+
+### Send POST request with json body
+POST http://localhost:8080/todos
+Content-Type: application/json
+Authorization: "Basic admin:admin"
+
+{
+  "id": 99,
+  "text": "content",
+  "completed": false
+}
+
+### Send PUT
+PUT http://localhost:8080/todos/999
+Content-Type: application/json
+
+
+{
+  "id": 999,
+  "text": "content2222",
+  "completed": true
+}
+
+### Send DELETE
+DELETE http://localhost:8080/todos/999
+Content-Type: application/json

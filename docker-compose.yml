@@ -1,0 +1,7 @@
+services:
+  todo-app:
+    image: todo-app
+    ports:
+      - "8081:4242"
+    environment:
+      - VERBOSE=1
